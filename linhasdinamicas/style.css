@@ -1,0 +1,30 @@
+
+nav
+{
+    text-align: center;
+    margin-top: 50px;
+    font-family: arial;
+}
+nav a
+{
+    color: black;
+    text-decoration: none;
+    padding: 0px 50px 10px 0;
+    font-size: 25pt;
+    position: relative;
+}
+nav::after
+{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav:hover ::after{
+     width: 100%;
+
+} 
